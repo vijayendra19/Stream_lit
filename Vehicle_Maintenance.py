@@ -26,14 +26,18 @@ maintenance_schedule_four_wheeler = {
     "Wiper Blades": {"interval_miles": 0, "interval_days": 180},
 }
 
-# Example brands and models
+# Expanded list of brands and models
 brands_and_models = {
-    "Toyota": ["Corolla", "Camry", "RAV4", "Prius"],
-    "Ford": ["Fiesta", "Mustang", "Explorer", "Focus"],
-    "Honda": ["Civic", "Accord", "CR-V", "Fit"],
-    "Yamaha": ["YZF-R3", "MT-07", "FZ-09"],
-    "Suzuki": ["GSX-R600", "V-Strom 650", "Hayabusa"],
-    "Harley-Davidson": ["Street 750", "Iron 883", "Fat Boy"]
+    "Toyota": ["Corolla", "Camry", "RAV4", "Prius", "Highlander", "Land Cruiser"],
+    "Ford": ["Fiesta", "Mustang", "Explorer", "Focus", "F-150", "Escape"],
+    "Honda": ["Civic", "Accord", "CR-V", "Fit", "Pilot", "Odyssey"],
+    "BMW": ["3 Series", "5 Series", "X3", "X5", "M3", "i8"],
+    "Mercedes-Benz": ["C-Class", "E-Class", "S-Class", "GLA", "GLE", "G-Class"],
+    "Yamaha": ["YZF-R3", "MT-07", "FZ-09", "R15", "FZ-S", "MT-15"],
+    "Suzuki": ["GSX-R600", "V-Strom 650", "Hayabusa", "Gixxer", "Intruder", "Access 125"],
+    "Harley-Davidson": ["Street 750", "Iron 883", "Fat Boy", "Sportster", "Street Bob", "Road King"],
+    "Kawasaki": ["Ninja 300", "Z900", "Versys 650", "Vulcan S", "Ninja H2", "KLX 140"],
+    "Ducati": ["Panigale V4", "Monster 821", "Multistrada 950", "Scrambler", "Diavel 1260", "SuperSport"]
 }
 
 st.title("Garage Owner's Vehicle Maintenance Management")
@@ -45,10 +49,10 @@ vehicle_type = st.radio("Vehicle Type", ("Two-Wheeler", "Four-Wheeler"))
 # Set the maintenance schedule based on vehicle type
 if vehicle_type == "Two-Wheeler":
     maintenance_schedule = maintenance_schedule_two_wheeler
-    available_brands = ["Yamaha", "Suzuki", "Harley-Davidson"]
+    available_brands = ["Yamaha", "Suzuki", "Harley-Davidson", "Kawasaki", "Ducati"]
 else:
     maintenance_schedule = maintenance_schedule_four_wheeler
-    available_brands = ["Toyota", "Ford", "Honda"]
+    available_brands = ["Toyota", "Ford", "Honda", "BMW", "Mercedes-Benz"]
 
 # Vehicle Info
 st.header("Vehicle Information")
