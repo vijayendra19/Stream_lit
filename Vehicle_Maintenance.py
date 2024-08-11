@@ -39,6 +39,7 @@ brands_and_models = {
     "Kawasaki": ["Ninja 300", "Z900", "Versys 650", "Vulcan S", "Ninja H2", "KLX 140"],
     "Ducati": ["Panigale V4", "Monster 821", "Multistrada 950", "Scrambler", "Diavel 1260", "SuperSport"],
     "Tata":["Tiago", "Altroz", "Tigor", "Nexon", "Harrier", "Safari", "Punch", "Nexon EV ", "Nexon EV", "Tigor EV", "Tiago EV"]
+}
 
 st.title("Garage Owner's Vehicle Maintenance Management")
 
