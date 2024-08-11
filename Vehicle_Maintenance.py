@@ -38,7 +38,13 @@ brands_and_models = {
     "Harley-Davidson": ["Street 750", "Iron 883", "Fat Boy", "Sportster", "Street Bob", "Road King"],
     "Kawasaki": ["Ninja 300", "Z900", "Versys 650", "Vulcan S", "Ninja H2", "KLX 140"],
     "Ducati": ["Panigale V4", "Monster 821", "Multistrada 950", "Scrambler", "Diavel 1260", "SuperSport"],
-    "Tata":["Tiago", "Altroz", "Tigor", "Nexon", "Harrier", "Safari", "Punch", "Nexon EV ", "Nexon EV", "Tigor EV", "Tiago EV"]
+    "Tata":["Tiago", "Altroz", "Tigor", "Nexon", "Harrier", "Safari", "Punch", "Nexon EV ", "Nexon EV", "Tigor EV", "Tiago EV"],
+    'pulsar': ['Pulsar 150', 'Pulsar NS200', 'Pulsar RS200'], 
+    'splendor': ['Splendor Plus', 'Super Splendor', 'Splendor Xtend'],
+    'discover': ['Discover 110', 'Discover 125'],
+    'ktm': ['Duke 200', 'RC 390', 'Adventure 390'],
+    'royal-enfield': ['Classic 350', 'Bullet 350', 'Himalayan']
+    "Maruti-Suzuki":['Alto', 'Swift', 'Baleno', 'Ignis','Dzire', 'Ciaz','Brezza', 'Vitara Brezza', 'Grand Vitara', 'S-Cross','Ertiga', 'XL6']
 }
 
 st.title("Garage Owner's Vehicle Maintenance Management")
@@ -50,10 +56,10 @@ vehicle_type = st.radio("Vehicle Type", ("Two-Wheeler", "Four-Wheeler"))
 # Set the maintenance schedule based on vehicle type
 if vehicle_type == "Two-Wheeler":
     maintenance_schedule = maintenance_schedule_two_wheeler
-    available_brands = ["Yamaha", "Suzuki", "Harley-Davidson", "Kawasaki", "Ducati"]
+    available_brands = ["Yamaha", "Suzuki", "Harley-Davidson", "Kawasaki", "Ducati","pulsar","splendor","discover","ktm","royal-enfield"]
 else:
     maintenance_schedule = maintenance_schedule_four_wheeler
-    available_brands = ["Toyota", "Ford", "Honda", "BMW", "Mercedes-Benz"]
+    available_brands = ["Toyota", "Ford", "Honda", "BMW", "Mercedes-Benz","Tata","Maruti-Suzuki"]
 
 # Vehicle Info
 st.header("Vehicle Information")
