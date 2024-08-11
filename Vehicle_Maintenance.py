@@ -47,7 +47,7 @@ brands_and_models = {
     "Maruti-Suzuki": ['Alto', 'Swift', 'Baleno', 'Ignis', 'Dzire', 'Ciaz', 'Brezza', 'Vitara Brezza', 'Grand Vitara', 'S-Cross', 'Ertiga', 'XL6']
 }
 
-st.title("Garage Owner's Vehicle Maintenance Management")
+st.title("CarCareCheck")
 
 # Select Vehicle Type
 st.header("Select Vehicle Type")
