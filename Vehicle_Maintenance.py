@@ -43,7 +43,7 @@ brands_and_models = {
     'splendor': ['Splendor Plus', 'Super Splendor', 'Splendor Xtend'],
     'discover': ['Discover 110', 'Discover 125'],
     'ktm': ['Duke 200', 'RC 390', 'Adventure 390'],
-    'royal-enfield': ['Classic 350', 'Bullet 350', 'Himalayan']
+    'royal-enfield': ['Classic 350', 'Bullet 350', 'Himalayan'],
     "Maruti-Suzuki":['Alto', 'Swift', 'Baleno', 'Ignis','Dzire', 'Ciaz','Brezza', 'Vitara Brezza', 'Grand Vitara', 'S-Cross','Ertiga', 'XL6']
 }
 
